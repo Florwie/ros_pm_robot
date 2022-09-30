@@ -1,0 +1,1452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="roboter_zusammenbau">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.625821801363778 0.570133136306886 0.131114542394431"
+        rpy="0 0 0" />
+      <mass
+        value="185.737269065976" />
+      <inertia
+        ixx="17.6891686329467"
+        ixy="-0.000553953906476897"
+        ixz="2.11795920498383E-05"
+        iyy="19.5856182457273"
+        iyz="0.00180194516552894"
+        izz="36.6182068946149" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="X_Axis">
+    <inertial>
+      <origin
+        xyz="0.471231991062568 -0.139025494551542 0.0270399805441128"
+        rpy="0 0 0" />
+      <mass
+        value="3.40836171067752" />
+      <inertia
+        ixx="0.0248404376545585"
+        ixy="-0.000748520696688885"
+        ixz="6.132572129816E-06"
+        iyy="0.00883308286049191"
+        iyz="-2.42881007943596E-05"
+        izz="0.0333342630504496" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/X_Axis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/X_Axis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="X_Axis_Joint"
+    type="prismatic">
+    <origin
+      xyz="0.19 0.5545 0.56"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="X_Axis" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="1"
+      effort="100"
+      velocity="0.05" />
+  </joint>
+  <link
+    name="Y_Axis">
+    <inertial>
+      <origin
+        xyz="0.0644731605204101 0.306281288242724 0.0959734258135503"
+        rpy="0 0 0" />
+      <mass
+        value="5.1487838864562" />
+      <inertia
+        ixx="0.0689971056038874"
+        ixy="-5.48415730831333E-06"
+        ixz="0.000161589759460482"
+        iyy="0.0347519976611458"
+        iyz="-0.00648361648669566"
+        izz="0.0562521130143104" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Y_Axis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Y_Axis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Y_Axis_Joint"
+    type="prismatic">
+    <origin
+      xyz="0.41353 -0.39197 0.0625"
+      rpy="0 0 0" />
+    <parent
+      link="X_Axis" />
+    <child
+      link="Y_Axis" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0.5"
+      effort="100"
+      velocity="0.05" />
+  </joint>
+  <link
+    name="Z_Axis">
+    <inertial>
+      <origin
+        xyz="0.0559367655769651 0.0443072297773286 -0.216569000390305"
+        rpy="0 0 0" />
+      <mass
+        value="2.9874598652384" />
+      <inertia
+        ixx="0.0172466701345531"
+        ixy="-1.4315599424108E-05"
+        ixz="0.000234826510366088"
+        iyy="0.0221649939209612"
+        iyz="9.07350690367129E-05"
+        izz="0.00613325660638476" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Z_Axis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Z_Axis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Z_Axis_Joint"
+    type="prismatic">
+    <origin
+      xyz="-0.001 0.46653 0.28252"
+      rpy="0 0 0" />
+    <parent
+      link="Y_Axis" />
+    <child
+      link="Z_Axis" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.3"
+      effort="100"
+      velocity="0.05" />
+  </joint>
+  <link
+    name="Gripper_Rot_Plate">
+    <inertial>
+      <origin
+        xyz="2.01133764088368E-07 1.76899426402449E-07 -0.0164220766118732"
+        rpy="0 0 0" />
+      <mass
+        value="0.110297257500002" />
+      <inertia
+        ixx="8.79764931492587E-05"
+        ixy="-1.83943809424941E-10"
+        ixz="-1.48379888428393E-10"
+        iyy="8.79759413838816E-05"
+        iyz="-1.27463389919307E-10"
+        izz="0.000165659869826772" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gripper_Rot_Plate.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gripper_Rot_Plate.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Gripper_Rot_Plate_Joint"
+    type="revolute">
+    <origin
+      xyz="0.0075 0.09 -0.333"
+      rpy="0 0 0" />
+    <parent
+      link="Z_Axis" />
+    <child
+      link="Gripper_Rot_Plate" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="628319"
+      effort="100"
+      velocity="0.05" />
+  </joint>
+  <link
+    name="Gripper">
+    <inertial>
+      <origin
+        xyz="0.000135108807628959 -1.05111383998935E-05 -0.0292448632131204"
+        rpy="0 0 0" />
+      <mass
+        value="0.127647896986229" />
+      <inertia
+        ixx="2.5142711578718E-05"
+        ixy="-1.59474432850184E-08"
+        ixz="3.35250198835353E-09"
+        iyy="2.54173373628528E-05"
+        iyz="4.55516572822246E-10"
+        izz="4.13581383274998E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gripper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gripper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Gripper_Joint"
+    type="fixed">
+    <origin
+      xyz="0 0 -0.0255"
+      rpy="0 0 0" />
+    <parent
+      link="Gripper_Rot_Plate" />
+    <child
+      link="Gripper" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Glue_Cartridge_Flap">
+    <inertial>
+      <origin
+        xyz="-0.0309218156679658 -0.0304308922835652 0.0425192556865508"
+        rpy="0 0 0" />
+      <mass
+        value="0.0179277924431148" />
+      <inertia
+        ixx="4.17419773394052E-06"
+        ixy="1.29835566651962E-07"
+        ixz="-6.29537316660322E-08"
+        iyy="5.03325262650482E-06"
+        iyz="-9.02306176061247E-09"
+        izz="4.1188843203633E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Glue_Cartridge_Flap.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Glue_Cartridge_Flap.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Glue_Cartridge_Flap_Joint"
+    type="prismatic">
+    <origin
+      xyz="0.16314 0.102 -0.4115"
+      rpy="0 0 0" />
+    <parent
+      link="Z_Axis" />
+    <child
+      link="Glue_Cartridge_Flap" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0.02"
+      effort="100"
+      velocity="0.05" />
+  </joint>
+  <link
+    name="Glue_Cartridge">
+    <inertial>
+      <origin
+        xyz="0.00252184437862241 0.0162311247980112 -0.090222805299254"
+        rpy="0 0 0" />
+      <mass
+        value="0.072567178977958" />
+      <inertia
+        ixx="3.42933852016556E-05"
+        ixy="-1.91967791645742E-07"
+        ixz="5.62664387505565E-08"
+        iyy="3.40475356596661E-05"
+        iyz="-5.66364139855266E-07"
+        izz="1.14639175050348E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Glue_Cartridge.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Glue_Cartridge.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Glue_Cartridge_Joint"
+    type="prismatic">
+    <origin
+      xyz="0.1715 0.0582 -0.2855"
+      rpy="0 0 0" />
+    <parent
+      link="Z_Axis" />
+    <child
+      link="Glue_Cartridge" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.04"
+      effort="100"
+      velocity="0.05" />
+  </joint>
+  <link
+    name="EQ">
+    <inertial>
+      <origin
+        xyz="-0.000295411016359687 0.0248543962427797 0.0165802041397771"
+        rpy="0 0 0" />
+      <mass
+        value="0.398291319329287" />
+      <inertia
+        ixx="0.00156701563987073"
+        ixy="-4.4160432404923E-06"
+        ixz="9.921680406585E-08"
+        iyy="0.00155258685914303"
+        iyz="1.49787524994677E-06"
+        izz="0.000122318061840883" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/EQ.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/EQ.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="EQ_joint"
+    type="prismatic">
+    <origin
+      xyz="0.2365 0.032258 -0.254"
+      rpy="0 0 0" />
+    <parent
+      link="Z_Axis" />
+    <child
+      link="EQ" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.02"
+      effort="100"
+      velocity="0.05" />
+  </joint>
+  <link
+    name="Test_Station">
+    <inertial>
+      <origin
+        xyz="0.0375 0.109867595364853 0.143148862667039"
+        rpy="0 0 0" />
+      <mass
+        value="1.39099524679326" />
+      <inertia
+        ixx="0.00780193904512034"
+        ixy="-2.61716248057058E-14"
+        ixz="-3.61572424102462E-21"
+        iyy="0.00547600691976027"
+        iyz="-9.87499782880815E-10"
+        izz="0.00281708795214925" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Test_Station.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Test_Station.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Test_Station_Joint"
+    type="fixed">
+    <origin
+      xyz="1.0625 0.6845 0.1"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Test_Station" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Gonio_Base_Rigth">
+    <inertial>
+      <origin
+        xyz="-0.445800187621152 0.0434115479426814 -0.0894627889959345"
+        rpy="0 0 0" />
+      <mass
+        value="0.735149712395274" />
+      <inertia
+        ixx="0.00216018233177315"
+        ixy="3.16379462229397E-06"
+        ixz="-3.44569576372702E-05"
+        iyy="0.00216845014162152"
+        iyz="0.00014773243614136"
+        izz="0.000551963002297886" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gonio_Base_Rigth.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gonio_Base_Rigth.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Gonio_base_Rigth_Joint"
+    type="fixed">
+    <origin
+      xyz="0.84378 0.7682 0.29928"
+      rpy="-0.090394 -0.021325 0.0019328" />
+    <parent
+      link="base_link" />
+    <child
+      link="Gonio_Base_Rigth" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Stage_1_Gonio_Right">
+    <inertial>
+      <origin
+        xyz="0.0450000285629689 0.0154464744552945 0.180028793226625"
+        rpy="0 0 0" />
+      <mass
+        value="0.0706349432835735" />
+      <inertia
+        ixx="3.36962706733939E-05"
+        ixy="-7.72258833181452E-11"
+        ixz="-1.91981813468535E-11"
+        iyy="1.8004068123271E-05"
+        iyz="-1.39266767162837E-07"
+        izz="4.86217530226209E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Stage_1_Gonio_Right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Stage_1_Gonio_Right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Stage_1_Gonio_Right_Joint"
+    type="fixed">
+    <origin
+      xyz="-0.49265 0.018632 -0.17514"
+      rpy="0.090373 0.021412 0" />
+    <parent
+      link="Gonio_Base_Rigth" />
+    <child
+      link="Stage_1_Gonio_Right" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Gonio_Right_Stage_1_Upper">
+    <inertial>
+      <origin
+        xyz="0.0236093552066095 0.000777611453360055 -0.0788309615097897"
+        rpy="0 0 0" />
+      <mass
+        value="0.135485840705969" />
+      <inertia
+        ixx="4.16210427703093E-05"
+        ixy="1.17487642349942E-09"
+        ixz="-1.10761881698597E-07"
+        iyy="6.29240886667246E-05"
+        iyz="-3.38034194495188E-07"
+        izz="9.71875209897851E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gonio_Right_Stage_1_Upper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gonio_Right_Stage_1_Upper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Gonio_Right_Stage_1_Upper_joint"
+    type="revolute">
+    <origin
+      xyz="0.0125 0.0325 0.282"
+      rpy="0 0 0" />
+    <parent
+      link="Stage_1_Gonio_Right" />
+    <child
+      link="Gonio_Right_Stage_1_Upper" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.087266"
+      upper="0.087266"
+      effort="100"
+      velocity="0.01" />
+  </joint>
+  <link
+    name="Gonio_Right_Stage_2_Upper">
+    <inertial>
+      <origin
+        xyz="-6.53128773286937E-10 -0.0325000008448237 -0.0578599602398764"
+        rpy="0 0 0" />
+      <mass
+        value="0.0546397592722759" />
+      <inertia
+        ixx="2.38958843339078E-05"
+        ixy="-1.02197648932082E-11"
+        ixz="8.98389856765747E-13"
+        iyy="1.8357388173855E-05"
+        iyz="-3.15839887672939E-13"
+        izz="3.93608769988886E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gonio_Right_Stage_2_Upper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gonio_Right_Stage_2_Upper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Gonio_Right_Stage_2_Upper_Joint"
+    type="revolute">
+    <origin
+      xyz="0.0325 0.032498 0.00032062"
+      rpy="0.0098655 0.0024365 2.4038E-05" />
+    <parent
+      link="Gonio_Right_Stage_1_Upper" />
+    <child
+      link="Gonio_Right_Stage_2_Upper" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-0.17453"
+      upper="0.17453"
+      effort="100"
+      velocity="0.01" />
+  </joint>
+  <link
+    name="Nest">
+    <inertial>
+      <origin
+        xyz="0.0324508724602411 0.0324929107955899 0.0216564841431588"
+        rpy="0 0 0" />
+      <mass
+        value="0.133934804260549" />
+      <inertia
+        ixx="3.05433990945617E-05"
+        ixy="-2.55507778379295E-10"
+        ixz="-1.74866992826515E-08"
+        iyy="4.80787890382241E-05"
+        iyz="2.24246440407044E-09"
+        izz="7.18729232272563E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Nest.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Nest.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Nest_Joint"
+    type="fixed">
+    <origin
+      xyz="-0.0325 -0.065 -0.05"
+      rpy="0 0 0" />
+    <parent
+      link="Gonio_Right_Stage_2_Upper" />
+    <child
+      link="Nest" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Camera_System">
+    <inertial>
+      <origin
+        xyz="0.0505028321627497 0.194735930802516 0.146786757354195"
+        rpy="0 0 0" />
+      <mass
+        value="2.8858378823955" />
+      <inertia
+        ixx="0.0184869737843273"
+        ixy="1.26297079346321E-05"
+        ixz="3.42211569734802E-06"
+        iyy="0.0045547035395917"
+        iyz="-9.47292848293822E-05"
+        izz="0.0194720270517019" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Camera_System.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Camera_System.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Camera_System_Joint"
+    type="fixed">
+    <origin
+      xyz="0.6025 0.5075 0.1"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Camera_System" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Camera_Calibration">
+    <inertial>
+      <origin
+        xyz="-2.23806848806962E-05 -0.0716494371536874 0.0040939089037404"
+        rpy="0 0 0" />
+      <mass
+        value="0.0326858647412389" />
+      <inertia
+        ixx="2.04982158767326E-05"
+        ixy="-1.61006130053567E-08"
+        ixz="3.66083708051192E-11"
+        iyy="2.64269352598525E-06"
+        iyz="-4.64472618194221E-07"
+        izz="2.23690961977999E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Camera_Calibration.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Camera_Calibration.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Camera_Calibartion_Joint"
+    type="prismatic">
+    <origin
+      xyz="0.065 0.4615 0.293"
+      rpy="0 0 0" />
+    <parent
+      link="Camera_System" />
+    <child
+      link="Camera_Calibration" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0.04"
+      effort="100"
+      velocity="0.05" />
+  </joint>
+  <link
+    name="Gonio_Base_Left">
+    <inertial>
+      <origin
+        xyz="0.126941450046363 0.123518998015631 0.100678856473502"
+        rpy="0 0 0" />
+      <mass
+        value="4.82459847582554" />
+      <inertia
+        ixx="0.011510655159352"
+        ixy="-3.33565784736194E-05"
+        ixz="1.45496624991336E-06"
+        iyy="0.0188665286335149"
+        iyz="2.60234058906315E-05"
+        izz="0.0269849279870219" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gonio_Base_Left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gonio_Base_Left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Gonio_Base_Left_Joint"
+    type="fixed">
+    <origin
+      xyz="0.7525 0.6845 0.1"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Gonio_Base_Left" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Gonio_Left_Stage_1_Upper">
+    <inertial>
+      <origin
+        xyz="-0.0997824847552678 -0.0127756758190852 -0.043703907105459"
+        rpy="0 0 0" />
+      <mass
+        value="0.578798887684806" />
+      <inertia
+        ixx="0.000400478327318305"
+        ixy="-0.000128782720085982"
+        ixz="1.08847308689663E-05"
+        iyy="0.00158244307813123"
+        iyz="3.22289681548599E-05"
+        izz="0.00187665455672177" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gonio_Left_Stage_1_Upper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gonio_Left_Stage_1_Upper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Gonio_Left_Stage_1_Upper_Joint"
+    type="revolute">
+    <origin
+      xyz="0.1565 0.11 0.2125"
+      rpy="0 0 0" />
+    <parent
+      link="Gonio_Base_Left" />
+    <child
+      link="Gonio_Left_Stage_1_Upper" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.78539816339745"
+      upper="0.78539816339745"
+      effort="100"
+      velocity="0.01" />
+  </joint>
+  <link
+    name="Gonio_Left_Stage_2_Upper">
+    <inertial>
+      <origin
+        xyz="0.000453919252387552 -0.026810883905591 -0.0188528471217686"
+        rpy="0 0 0" />
+      <mass
+        value="0.0270626709955924" />
+      <inertia
+        ixx="6.08920277060796E-06"
+        ixy="-6.79797969317198E-09"
+        ixz="-7.50167618964204E-08"
+        iyy="4.41050820554797E-06"
+        iyz="4.70705338099674E-07"
+        izz="9.562132185956E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gonio_Left_Stage_2_Upper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gonio_Left_Stage_2_Upper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Gonio_Left_Stage_2_Upper_Joint"
+    type="revolute">
+    <origin
+      xyz="-0.04 0.024898 -0.0022563"
+      rpy="0 0 0" />
+    <parent
+      link="Gonio_Left_Stage_1_Upper" />
+    <child
+      link="Gonio_Left_Stage_2_Upper" />
+    <axis
+      xyz="0 -0.99592 0.09025" />
+    <limit
+      lower="-0.78539816339745"
+      upper="0.78539816339745"
+      effort="100"
+      velocity="0.01" />
+  </joint>
+  <link
+    name="Gonio_Right_Mount_Lower">
+    <inertial>
+      <origin
+        xyz="0.0162416229706152 0.0179266817330169 0.0446054184338196"
+        rpy="0 0 0" />
+      <mass
+        value="0.193859171974624" />
+      <inertia
+        ixx="6.69651312722392E-05"
+        ixy="1.79273833022158E-07"
+        ixz="9.94004482332898E-07"
+        iyy="0.000515179675771848"
+        iyz="1.1170051046562E-06"
+        izz="0.00047114584658646" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gonio_Right_Mount_Lower.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gonio_Right_Mount_Lower.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Gonio_Right_Mount_Lower_joint"
+    type="fixed">
+    <origin
+      xyz="-0.025217 -0.051199 -0.010968"
+      rpy="-0.090394 -0.021325 0.0019328" />
+    <parent
+      link="Gonio_Left_Stage_2_Upper" />
+    <child
+      link="Gonio_Right_Mount_Lower" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Gonio_Right_Mount_Upper">
+    <inertial>
+      <origin
+        xyz="0.0119263270792754 0.0330807270437724 0.0840501734081993"
+        rpy="0 0 0" />
+      <mass
+        value="0.0762325940447469" />
+      <inertia
+        ixx="1.38687320915781E-05"
+        ixy="-6.92884182364227E-07"
+        ixz="-6.00567400956911E-06"
+        iyy="0.000262681400108344"
+        iyz="-7.84267276145392E-07"
+        izz="0.000253172154650714" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gonio_Right_Mount_Upper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Gonio_Right_Mount_Upper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Gonio_Right_Mount_Upper_Joint"
+    type="fixed">
+    <origin
+      xyz="0.00054449 0 0"
+      rpy="0.090373 0.021412 0" />
+    <parent
+      link="Gonio_Right_Mount_Lower" />
+    <child
+      link="Gonio_Right_Mount_Upper" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="UV_Cart_Left">
+    <inertial>
+      <origin
+        xyz="0.0914013664141523 -0.0253104400331259 0.0106949485904511"
+        rpy="0 0 0" />
+      <mass
+        value="0.127959263611525" />
+      <inertia
+        ixx="5.21591452075978E-05"
+        ixy="6.2038344111712E-08"
+        ixz="-1.12100819961442E-07"
+        iyy="6.05583187276662E-05"
+        iyz="5.2056206691589E-08"
+        izz="0.0001087127585747" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/UV_Cart_Left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/UV_Cart_Left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="UV_Cart_Left_Joint"
+    type="prismatic">
+    <origin
+      xyz="0.0065 0.23118 0.2526"
+      rpy="0 0 0" />
+    <parent
+      link="Gonio_Base_Left" />
+    <child
+      link="UV_Cart_Left" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0.1"
+      effort="100"
+      velocity="0.05" />
+  </joint>
+  <link
+    name="UV_Module_Left">
+    <inertial>
+      <origin
+        xyz="-0.00149625704775685 -0.0146282010974796 0.0150907885908844"
+        rpy="0 0 0" />
+      <mass
+        value="0.119915229322348" />
+      <inertia
+        ixx="8.58688560134319E-05"
+        ixy="-9.33412693374113E-06"
+        ixz="-2.12947224034943E-07"
+        iyy="1.98652847972194E-05"
+        iyz="-9.66953808948402E-07"
+        izz="0.000101234986556127" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/UV_Module_Left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/UV_Module_Left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="UV_Module_Left_Joint"
+    type="prismatic">
+    <origin
+      xyz="0.092383 0.02382 0.0276"
+      rpy="0 0 0" />
+    <parent
+      link="UV_Cart_Left" />
+    <child
+      link="UV_Module_Left" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0.05"
+      effort="100"
+      velocity="0.05" />
+  </joint>
+  <link
+    name="UV_Cart_Right">
+    <inertial>
+      <origin
+        xyz="0.113531365594026 -0.0370495599671551 0.010694948590817"
+        rpy="0 0 0" />
+      <mass
+        value="0.127959263608561" />
+      <inertia
+        ixx="5.21591452072933E-05"
+        ixy="6.20383442929791E-08"
+        ixz="1.1210082015652E-07"
+        iyy="6.05583187273427E-05"
+        iyz="-5.20562070043966E-08"
+        izz="0.000108712758574227" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/UV_Cart_Right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/UV_Cart_Right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="UV_Cart_Right_Joint"
+    type="prismatic">
+    <origin
+      xyz="0.0065 0.05118 0.2526"
+      rpy="0 0 0" />
+    <parent
+      link="Gonio_Base_Left" />
+    <child
+      link="UV_Cart_Right" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0.1"
+      effort="0.05"
+      velocity="100" />
+  </joint>
+  <link
+    name="UV_Module_Right">
+    <inertial>
+      <origin
+        xyz="0.00149625705795903 0.00585466541612358 0.0150907885908853"
+        rpy="0 0 0" />
+      <mass
+        value="0.119915229322348" />
+      <inertia
+        ixx="8.58688560134322E-05"
+        ixy="-9.33412693374157E-06"
+        ixz="2.12947224034949E-07"
+        iyy="1.98652847972198E-05"
+        iyz="9.6695380894845E-07"
+        izz="0.000101234986556127" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/UV_Module_Right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/UV_Module_Right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="UV_Module_Right_Joint"
+    type="prismatic">
+    <origin
+      xyz="0.11255 -0.08618 0.0276"
+      rpy="0 0 0" />
+    <parent
+      link="UV_Cart_Right" />
+    <child
+      link="UV_Module_Right" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0.05"
+      effort="100"
+      velocity="0.05" />
+  </joint>
+</robot>
