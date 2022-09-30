@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot
+  name="roboter_zusammenbau"
+  xmlns:xacro="https://ros.org/wiki/xacro">
+
+    <xacro:include filename="$(find roboter_zusammenbau)/urdf/roboter_zusammenbau.urdf" />
+
+</robot>
