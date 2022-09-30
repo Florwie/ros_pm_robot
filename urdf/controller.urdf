@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot
+  name="roboter_zusammenbau">
+
+  <transmission name="x_axis_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="X_Axis_Joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="X_Axis">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="y_axis_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="Y_Axis_Joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="Y_Axis">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="z_axis_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="Z_Axis_Joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="Z_Axis">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <gazebo>
+    <plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control">
+      <!-- <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType> -->
+      <robotNamespace>/roboter_zusammenbau</robotNamespace>
+    </plugin>
+  </gazebo>
+
+</robot>

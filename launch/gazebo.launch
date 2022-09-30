@@ -2,6 +2,13 @@
   <param
     name="robot_description"
     command="xacro --inorder '$(find roboter_zusammenbau)/urdf/main.xacro'" />
+  <rosparam file="$(find roboter_zusammenbau)/config/control.yaml" command="load" />
+  <node name="controller_manager" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" ns="roboter_zusammenbau" args="X_Axis_Joint_position_controller X_Axis_Joint_state_controller Y_Axis_Joint_position_controller Y_Axis_Joint_state_controller Z_Axis_Joint_position_controller Z_Axis_Joint_state_controller" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+    respawn="false" output="screen">
+    <remap from="/joint_states" to="/roboter_zusammenbau/joint_states" />
+  </node>
 
   <include
     file="$(find gazebo_ros)/launch/empty_world.launch" />
@@ -14,8 +21,7 @@
     name="spawn_model"
     pkg="gazebo_ros"
     type="spawn_model"
-    args="-urdf -model roboter_zusammenbau -param robot_description"
-    output="screen" />
+    args="-urdf -model roboter_zusammenbau -param robot_description" />
   <node
     name="fake_joint_calibration"
     pkg="rostopic"

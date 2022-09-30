@@ -4,6 +4,15 @@
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="roboter_zusammenbau">
+
+  <link name="dummy">
+  </link>
+  
+  <joint name="dummy_joint" type="fixed">
+    <parent link="dummy"/>
+    <child link="base_link"/>
+  </joint>
+
   <link
     name="base_link">
     <inertial>

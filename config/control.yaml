@@ -1,0 +1,41 @@
+roboter_zusammenbau:
+  X_Axis_Joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  X_Axis_Joint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: X_Axis_Joint
+
+  Y_Axis_Joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  Y_Axis_Joint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: Y_Axis_Joint
+
+  Z_Axis_Joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  Z_Axis_Joint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: Z_Axis_Joint
+
+  gazebo_ros_control:
+    pid_gains:
+      X_Axis_Joint:
+        p: 100.0
+        i: 0.01
+        d: 10.0
+
+      Y_Axis_Joint:
+        p: 100.0
+        i: 0.01
+        d: 10.0
+
+      Z_Axis_Joint:
+        p: 100.0
+        i: 0.01
+        d: 10.0
