@@ -30,7 +30,15 @@ roboter_zusammenbau:
   Gripper_Rot_Plate_Joint_position_controller:
     type: position_controllers/JointPositionController
     joint: Gripper_Rot_Plate_Joint  
-  
+
+  Glue_Cartridge_Flap_Joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  Glue_Cartridge_Flap_Joint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: Glue_Cartridge_Flap_Joint
+
   Glue_Cartridge_Joint_state_controller:
     type: joint_state_controller/JointStateController
     publish_rate: 50
@@ -143,6 +151,11 @@ roboter_zusammenbau:
         i: 0.01
         d: 0.0  
       
+      Glue_Cartridge_Flap_Joint:
+        p: 100.0
+        i: 0.01
+        d: 10.0
+        
       Glue_Cartridge_Joint:
         p: 100.0
         i: 0.01

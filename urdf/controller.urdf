@@ -42,6 +42,16 @@
     </actuator>
   </transmission>  
 
+  <transmission name="glue_cartridge_flap_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="Glue_Cartridge_Flap_Joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="Glue_Cartridge_Flap_Plate">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
   <transmission name="glue_cartridge_transmission">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="Glue_Cartridge_Joint">
