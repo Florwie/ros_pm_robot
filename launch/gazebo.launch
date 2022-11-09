@@ -9,10 +9,10 @@
     Gonio_Right_Stage_2_Upper_Joint_position_controller Gonio_Right_Stage_2_Upper_Joint_state_controller Camera_Calibartion_Joint_position_controller Camera_Calibartion_Joint_state_controller Gonio_Left_Stage_1_Upper_Joint_position_controller Gonio_Left_Stage_1_Upper_Joint_state_controller Gonio_Left_Stage_2_Upper_Joint_position_controller 
     Gonio_Left_Stage_2_Upper_Joint_state_controller UV_Cart_Left_Joint_position_controller UV_Cart_Left_Joint_state_controller UV_Module_Left_Joint_position_controller UV_Module_Left_Joint_state_controller UV_Cart_Right_Joint_position_controller UV_Cart_Right_Joint_state_controller UV_Module_Right_Joint_position_controller
     UV_Module_Right_Joint_state_controller" />
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+  <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
     respawn="false" output="screen">
     <remap from="/joint_states" to="/roboter_zusammenbau/joint_states" />
-  </node>
+  </node> -->
 
   <include
     file="$(find gazebo_ros)/launch/empty_world.launch" />
