@@ -540,6 +540,59 @@
       velocity="0.05" />
   </joint>
   <link
+    name="Camera_Module_Z_Axis">
+    <inertial>
+      <origin
+        xyz="0.0116313616057333 0.021423120763728 -0.0632876276111616"
+        rpy="0 0 0" />
+      <mass
+        value="0.0744906107551848" />
+      <inertia
+        ixx="3.47731720414151E-05"
+        ixy="6.43752140735308E-10"
+        ixz="3.2840909272469E-07"
+        iyy="3.75323274030919E-05"
+        iyz="1.11954348594211E-07"
+        izz="9.81037833809291E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://roboter_zusammenbau/meshes/Camera_Module_Z_Axis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="ppackage://roboter_zusammenbau/meshes/Camera_Module_Z_Axis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Camera_Module_Z_Axis_Joint"
+    type="fixed">
+    <origin
+      xyz="0.0795000000000031 0.0685000209707082 -0.181500000000001"
+      rpy="0 0 0" />
+    <parent
+      link="Z_Axis" />
+    <child
+      link="Camera_Module_Z_Axis" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
     name="Test_Station">
     <inertial>
       <origin
@@ -754,7 +807,7 @@
       lower="-0.087266"
       upper="0.087266"
       effort="100"
-      velocity="0.01" />
+      velocity="0.1" />
   </joint>
   <link
     name="Gonio_Right_Stage_2_Upper">
@@ -812,7 +865,7 @@
       lower="-0.17453"
       upper="0.17453"
       effort="100"
-      velocity="0.01" />
+      velocity="0.1" />
   </joint>
   <link
     name="Nest">
@@ -1087,7 +1140,7 @@
       lower="-0.78539816339745"
       upper="0.78539816339745"
       effort="100"
-      velocity="0.01" />
+      velocity="0.1" />
   </joint>
   <link
     name="Gonio_Left_Stage_2_Upper">
@@ -1145,7 +1198,7 @@
       lower="-0.78539816339745"
       upper="0.78539816339745"
       effort="100"
-      velocity="0.01" />
+      velocity="0.1" />
   </joint>
   <link
     name="Gonio_Right_Mount_Lower">
@@ -1364,8 +1417,8 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="0"
-      upper="0.05"
+      lower="-0.05"
+      upper="0.0"
       effort="100"
       velocity="0.05" />
   </joint>
@@ -1480,8 +1533,8 @@
     <axis
       xyz="0 -1 0" />
     <limit
-      lower="0"
-      upper="0.05"
+      lower="-0.05"
+      upper="0.0"
       effort="100"
       velocity="0.05" />
   </joint>
