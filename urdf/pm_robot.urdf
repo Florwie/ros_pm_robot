@@ -3,7 +3,7 @@
      Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="roboter_zusammenbau">
+  name="pm_robot">
 
   <link name="world">
   </link>
@@ -38,7 +38,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/base_link.STL" />
+          filename="package://pm_robot/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -52,7 +52,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/base_link.STL" />
+          filename="package://pm_robot/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -78,7 +78,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/X_Axis.STL" />
+          filename="package://pm_robot/meshes/X_Axis.STL" />
       </geometry>
       <material
         name="">
@@ -92,7 +92,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/X_Axis.STL" />
+          filename="package://pm_robot/meshes/X_Axis.STL" />
       </geometry>
     </collision>
   </link>
@@ -136,7 +136,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Y_Axis.STL" />
+          filename="package://pm_robot/meshes/Y_Axis.STL" />
       </geometry>
       <material
         name="">
@@ -150,7 +150,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Y_Axis.STL" />
+          filename="package://pm_robot/meshes/Y_Axis.STL" />
       </geometry>
     </collision>
   </link>
@@ -194,7 +194,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Z_Axis.STL" />
+          filename="package://pm_robot/meshes/Z_Axis.STL" />
       </geometry>
       <material
         name="">
@@ -208,7 +208,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Z_Axis.STL" />
+          filename="package://pm_robot/meshes/Z_Axis.STL" />
       </geometry>
     </collision>
   </link>
@@ -256,7 +256,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gripper_Rot_Plate.STL" />
+          filename="package://pm_robot/meshes/Gripper_Rot_Plate.STL" />
       </geometry>
       <material
         name="">
@@ -270,7 +270,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gripper_Rot_Plate.STL" />
+          filename="package://pm_robot/meshes/Gripper_Rot_Plate.STL" />
       </geometry>
     </collision>
   </link>
@@ -318,7 +318,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gripper.STL" />
+          filename="package://pm_robot/meshes/Gripper.STL" />
       </geometry>
       <material
         name="">
@@ -332,7 +332,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gripper.STL" />
+          filename="package://pm_robot/meshes/Gripper.STL" />
       </geometry>
     </collision>
   </link>
@@ -375,7 +375,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Glue_Cartridge_Flap.STL" />
+          filename="package://pm_robot/meshes/Glue_Cartridge_Flap.STL" />
       </geometry>
       <material
         name="">
@@ -389,7 +389,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Glue_Cartridge_Flap.STL" />
+          filename="package://pm_robot/meshes/Glue_Cartridge_Flap.STL" />
       </geometry>
     </collision>
   </link>
@@ -437,7 +437,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Glue_Cartridge.STL" />
+          filename="package://pm_robot/meshes/Glue_Cartridge.STL" />
       </geometry>
       <material
         name="">
@@ -451,7 +451,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Glue_Cartridge.STL" />
+          filename="package://pm_robot/meshes/Glue_Cartridge.STL" />
       </geometry>
     </collision>
   </link>
@@ -499,7 +499,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/EQ.STL" />
+          filename="package://pm_robot/meshes/EQ.STL" />
       </geometry>
       <material
         name="">
@@ -513,7 +513,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/EQ.STL" />
+          filename="package://pm_robot/meshes/EQ.STL" />
       </geometry>
     </collision>
   </link>
@@ -561,7 +561,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Camera_Module_Z_Axis.STL" />
+          filename="package://pm_robot/meshes/Camera_Module_Z_Axis.STL" />
       </geometry>
       <material
         name="">
@@ -575,7 +575,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="ppackage://roboter_zusammenbau/meshes/Camera_Module_Z_Axis.STL" />
+          filename="ppackage://pm_robot/meshes/Camera_Module_Z_Axis.STL" />
       </geometry>
     </collision>
   </link>
@@ -614,7 +614,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Test_Station.STL" />
+          filename="package://pm_robot/meshes/Test_Station.STL" />
       </geometry>
       <material
         name="">
@@ -628,7 +628,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Test_Station.STL" />
+          filename="package://pm_robot/meshes/Test_Station.STL" />
       </geometry>
     </collision>
   </link>
@@ -667,7 +667,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gonio_Base_Rigth.STL" />
+          filename="package://pm_robot/meshes/Gonio_Base_Rigth.STL" />
       </geometry>
       <material
         name="">
@@ -681,7 +681,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gonio_Base_Rigth.STL" />
+          filename="package://pm_robot/meshes/Gonio_Base_Rigth.STL" />
       </geometry>
     </collision>
   </link>
@@ -720,7 +720,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Stage_1_Gonio_Right.STL" />
+          filename="package://pm_robot/meshes/Stage_1_Gonio_Right.STL" />
       </geometry>
       <material
         name="">
@@ -734,7 +734,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Stage_1_Gonio_Right.STL" />
+          filename="package://pm_robot/meshes/Stage_1_Gonio_Right.STL" />
       </geometry>
     </collision>
   </link>
@@ -773,7 +773,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gonio_Right_Stage_1_Upper.STL" />
+          filename="package://pm_robot/meshes/Gonio_Right_Stage_1_Upper.STL" />
       </geometry>
       <material
         name="">
@@ -787,7 +787,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gonio_Right_Stage_1_Upper.STL" />
+          filename="package://pm_robot/meshes/Gonio_Right_Stage_1_Upper.STL" />
       </geometry>
     </collision>
   </link>
@@ -831,7 +831,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gonio_Right_Stage_2_Upper.STL" />
+          filename="package://pm_robot/meshes/Gonio_Right_Stage_2_Upper.STL" />
       </geometry>
       <material
         name="">
@@ -845,7 +845,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gonio_Right_Stage_2_Upper.STL" />
+          filename="package://pm_robot/meshes/Gonio_Right_Stage_2_Upper.STL" />
       </geometry>
     </collision>
   </link>
@@ -889,7 +889,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Nest.STL" />
+          filename="package://pm_robot/meshes/Nest.STL" />
       </geometry>
       <material
         name="">
@@ -903,7 +903,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Nest.STL" />
+          filename="package://pm_robot/meshes/Nest.STL" />
       </geometry>
     </collision>
   </link>
@@ -942,7 +942,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Camera_System.STL" />
+          filename="package://pm_robot/meshes/Camera_System.STL" />
       </geometry>
       <material
         name="">
@@ -956,7 +956,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Camera_System.STL" />
+          filename="package://pm_robot/meshes/Camera_System.STL" />
       </geometry>
     </collision>
   </link>
@@ -995,7 +995,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Camera_Calibration.STL" />
+          filename="package://pm_robot/meshes/Camera_Calibration.STL" />
       </geometry>
       <material
         name="">
@@ -1009,7 +1009,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Camera_Calibration.STL" />
+          filename="package://pm_robot/meshes/Camera_Calibration.STL" />
       </geometry>
     </collision>
   </link>
@@ -1053,7 +1053,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gonio_Base_Left.STL" />
+          filename="package://pm_robot/meshes/Gonio_Base_Left.STL" />
       </geometry>
       <material
         name="">
@@ -1067,7 +1067,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gonio_Base_Left.STL" />
+          filename="package://pm_robot/meshes/Gonio_Base_Left.STL" />
       </geometry>
     </collision>
   </link>
@@ -1106,7 +1106,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gonio_Left_Stage_1_Upper.STL" />
+          filename="package://pm_robot/meshes/Gonio_Left_Stage_1_Upper.STL" />
       </geometry>
       <material
         name="">
@@ -1120,7 +1120,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gonio_Left_Stage_1_Upper.STL" />
+          filename="package://pm_robot/meshes/Gonio_Left_Stage_1_Upper.STL" />
       </geometry>
     </collision>
   </link>
@@ -1164,7 +1164,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gonio_Left_Stage_2_Upper.STL" />
+          filename="package://pm_robot/meshes/Gonio_Left_Stage_2_Upper.STL" />
       </geometry>
       <material
         name="">
@@ -1178,7 +1178,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gonio_Left_Stage_2_Upper.STL" />
+          filename="package://pm_robot/meshes/Gonio_Left_Stage_2_Upper.STL" />
       </geometry>
     </collision>
   </link>
@@ -1222,7 +1222,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gonio_Right_Mount_Lower.STL" />
+          filename="package://pm_robot/meshes/Gonio_Right_Mount_Lower.STL" />
       </geometry>
       <material
         name="">
@@ -1236,7 +1236,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gonio_Right_Mount_Lower.STL" />
+          filename="package://pm_robot/meshes/Gonio_Right_Mount_Lower.STL" />
       </geometry>
     </collision>
   </link>
@@ -1275,7 +1275,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gonio_Right_Mount_Upper.STL" />
+          filename="package://pm_robot/meshes/Gonio_Right_Mount_Upper.STL" />
       </geometry>
       <material
         name="">
@@ -1289,7 +1289,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/Gonio_Right_Mount_Upper.STL" />
+          filename="package://pm_robot/meshes/Gonio_Right_Mount_Upper.STL" />
       </geometry>
     </collision>
   </link>
@@ -1328,7 +1328,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/UV_Cart_Left.STL" />
+          filename="package://pm_robot/meshes/UV_Cart_Left.STL" />
       </geometry>
       <material
         name="">
@@ -1342,7 +1342,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/UV_Cart_Left.STL" />
+          filename="package://pm_robot/meshes/UV_Cart_Left.STL" />
       </geometry>
     </collision>
   </link>
@@ -1386,7 +1386,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/UV_Module_Left.STL" />
+          filename="package://pm_robot/meshes/UV_Module_Left.STL" />
       </geometry>
       <material
         name="">
@@ -1400,7 +1400,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/UV_Module_Left.STL" />
+          filename="package://pm_robot/meshes/UV_Module_Left.STL" />
       </geometry>
     </collision>
   </link>
@@ -1444,7 +1444,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/UV_Cart_Right.STL" />
+          filename="package://pm_robot/meshes/UV_Cart_Right.STL" />
       </geometry>
       <material
         name="">
@@ -1458,7 +1458,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/UV_Cart_Right.STL" />
+          filename="package://pm_robot/meshes/UV_Cart_Right.STL" />
       </geometry>
     </collision>
   </link>
@@ -1502,7 +1502,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/UV_Module_Right.STL" />
+          filename="package://pm_robot/meshes/UV_Module_Right.STL" />
       </geometry>
       <material
         name="">
@@ -1516,7 +1516,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://roboter_zusammenbau/meshes/UV_Module_Right.STL" />
+          filename="package://pm_robot/meshes/UV_Module_Right.STL" />
       </geometry>
     </collision>
   </link>

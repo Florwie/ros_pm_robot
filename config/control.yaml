@@ -1,4 +1,4 @@
-roboter_zusammenbau:
+pm_robot:
   X_Axis_Joint_state_controller:
     type: joint_state_controller/JointStateController
     publish_rate: 50

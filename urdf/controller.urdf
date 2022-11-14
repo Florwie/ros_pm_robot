@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot
-  name="roboter_zusammenbau">
+  name="pm_robot">
 
   <transmission name="x_axis_transmission">
     <type>transmission_interface/SimpleTransmission</type>
@@ -178,7 +178,7 @@
   <gazebo>
     <plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control">
       <!-- <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType> -->
-      <robotNamespace>/roboter_zusammenbau</robotNamespace>
+      <robotNamespace>/pm_robot</robotNamespace>
     </plugin>
   </gazebo>
 
