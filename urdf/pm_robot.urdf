@@ -610,15 +610,15 @@
   </joint>
 
   <gazebo reference="camera_link">
-    <sensor type="camera" name="camera1">
+    <sensor type="onsemi MT9P031" name="camera1">
       <pose>0 0 0 0 0 0 </pose>
       <visualize>true</visualize>
-      <update_rate>30.0</update_rate>
+      <update_rate>14.6</update_rate>
       <camera name="head">
         <horizontal_fov>1.3962634</horizontal_fov>
         <image>
-          <width>800</width>
-          <height>800</height>
+          <width>2592</width>
+          <height>1942</height>
           <format>R8G8B8</format>
         </image>
         <clip>
