@@ -3,7 +3,7 @@
     name="model" />
   <param
     name="robot_description"
-    command="$(find xacro)/xacro '$(find pm_robot)/urdf/main.xacro'" />
+    command="xacro --inorder '$(find pm_robot)/urdf/main.xacro'" />
   <node
     name="joint_state_publisher_gui"
     pkg="joint_state_publisher_gui"
